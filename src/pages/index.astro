@@ -1,15 +1,45 @@
 ---
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1 class='text-4xl'>Astro</h1>
+
+    <p>
+      This box should have a pink background because we added the pink color
+      within the preset, but it doesn't, which proves that presets aren't
+      working.
+    </p>
+
+    <p>
+      The mentioned preset is a copy-paste from Tailwind's <a
+        href='https://tailwindcss.com/docs/presets#creating-a-preset'
+      >
+        preset example</a
+      >.
+    </p>
+
+    <div class='border-4 border-black border-solid w-20 h-20 bg-pink'></div>
+  </body>
 </html>
+
+<style>
+  html {
+    font-family: 'Helvetica', sans-serif;
+  }
+  body {
+    padding: 1rem;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+</style>
